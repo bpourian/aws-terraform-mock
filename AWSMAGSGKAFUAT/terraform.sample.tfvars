@@ -18,7 +18,7 @@ subnet_name        = "name"
 vn_name            = "name"
 
 sec_group_name     = "name"
-my_ip              = "217.138.46.244/32"
+my_ip              = "ip"
 
 machine_name       = "name"
 
