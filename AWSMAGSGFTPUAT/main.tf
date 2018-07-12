@@ -96,15 +96,6 @@ data "aws_ami" "amazon_windows_2016" {
 }
 
 resource "aws_instance" "winserv2016" {
-    connection {
-    type     = "winrm"
-    user     = "${var.admin_username}"
-    password = "${var.admin_password}"
-
-    # set from default of 5m to 10m to avoid winrm timeout
-    timeout = "10m"
-  }
-
     ami             = "${data.aws_ami.amazon_windows_2016.image_id}"
     instance_type   = "t2.micro"
     subnet_id       = "${aws_subnet.main.id}"
