@@ -22,6 +22,3 @@ variable "my_ip" {}
 variable "machine_name" {}
 
 variable "key_name" {}
-
-variable "admin_username" {}
-variable "admin_password" {}
