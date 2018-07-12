@@ -13,3 +13,15 @@ variable "resource_group_vpc" {}
 
 variable "subnet_cidr_block" {}
 variable "subnet_name" {}
+
+variable "sec_group_name" {}
+
+variable "resource_group_ec2" {}
+variable "my_ip" {}
+
+variable "machine_name" {}
+
+variable "key_name" {}
+
+variable "admin_username" {}
+variable "admin_password" {}
